@@ -2,8 +2,10 @@
 
 # ⚡ Flash Speed Player
 
-<div style="border-left:4px solid #3B82F6;background:#F4F8FF;padding:10px 14px;margin:10px auto;max-width:780px;text-align:left;"><strong style="color:#1D4ED8;">A lightweight Windows desktop player for SWF/SPL games with Ruffle and adjustable playback speed.</strong></div>
-<div style="border-left:4px solid #E0A11B;background:#FFF8E7;padding:10px 14px;margin:10px auto;max-width:780px;text-align:left;"><strong style="color:#9A6700;">一款基于 Ruffle、支持 SWF/SPL 游戏与播放速度调节的轻量 Windows 桌面播放器。</strong></div>
+<table align="center" width="90%">
+<tr><td bgcolor="#F4F8FF"><strong>A lightweight Windows desktop player for SWF/SPL games with Ruffle and adjustable playback speed.</strong></td></tr>
+<tr><td bgcolor="#FFF8E7"><strong>一款基于 Ruffle、支持 SWF/SPL 游戏与播放速度调节的轻量 Windows 桌面播放器。</strong></td></tr>
+</table>
 
 <p>
   <img src="https://img.shields.io/badge/Platform-Windows%20x64-0078D4?style=for-the-badge&logo=windows" alt="Windows x64" />
@@ -139,4 +141,3 @@ npm run dist
 
 <div style="border-left:4px solid #3B82F6;background:#F4F8FF;padding:10px 14px;margin:8px 0;">The bundled Ruffle components retain their upstream licenses and notices.</div>
 <div style="border-left:4px solid #E0A11B;background:#FFF8E7;padding:10px 14px;margin:8px 0;">随项目分发的 Ruffle 组件保留其上游许可证与版权声明。</div>
-
