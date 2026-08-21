@@ -1,0 +1,54 @@
+{
+  "name": "flash-speed-desktop",
+  "version": "0.4.0-nightly.2026.6.24",
+  "description": "Flash Speed Player - SWF Player with Speed Control",
+  "author": "Flash Speed",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --dir",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.flashspeed.player",
+    "productName": "Flash Speed Player",
+    "asar": true,
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "native/flash-speed-player.exe",
+        "to": "native/flash-speed-player.exe"
+      },
+      {
+        "from": "native/ruffle.exe",
+        "to": "native/ruffle.exe"
+      },
+      {
+        "from": "native/LICENSE.md",
+        "to": "native/LICENSE.md"
+      },
+      {
+        "from": "native/README.md",
+        "to": "native/README.md"
+      },
+      {
+        "from": "assets/flash-speed-player.ico",
+        "to": "native/app.ico"
+      }
+    ],
+    "win": {
+      "icon": "assets/flash-speed-player.ico",
+      "target": ["dir"],
+      "artifactName": "${productName}-${version}-win-${arch}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "42.5.0",
+    "electron-builder": "^26.15.3"
+  }
+}
