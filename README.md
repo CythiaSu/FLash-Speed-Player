@@ -214,9 +214,10 @@ This separation keeps local-file loading in the native desktop path instead of a
 | `scripts/` | Rebuild helpers |
 | `THIRD-PARTY-NOTICES.md` | Third-party notices |
 
-## Build from Source
+## Build from Source / 从源码构建
 
-Install Node.js, npm, Rust stable with the MSVC Windows toolchain, and suitable Visual Studio C++ build tools. Run from the repository root:
+<p><strong>English</strong><br>Install Node.js, npm, Rust stable with the MSVC Windows toolchain, and suitable Visual Studio C++ build tools. Run the following commands from the repository root.</p>
+<p><strong>中文</strong><br>请安装 Node.js、npm、带 MSVC Windows 工具链的 Rust stable，以及匹配的 Visual Studio C++ 构建工具，然后在仓库根目录运行以下命令。</p>
 
 ```powershell
 npm ci
@@ -224,13 +225,17 @@ npm ci
 npm run dist
 ```
 
-The native build script compiles `ruffle_desktop` and copies the result to the filename expected by the Electron packaging configuration. The Electron build creates an extracted Windows application directory.
+<p><strong>English</strong><br>The native build script compiles <code>ruffle_desktop</code> and copies the result to the filename expected by the Electron packaging configuration. The Electron build creates an extracted Windows application directory.</p>
+<p><strong>中文</strong><br>原生构建脚本会编译 <code>ruffle_desktop</code>，并将结果复制为 Electron 打包配置所需的文件名。Electron 构建会生成解压运行的 Windows 应用目录。</p>
 
-## Third-Party Notices
+## Third-Party Notices / 第三方声明
 
-The native player is based on Ruffle. Preserve the notices in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), [native/LICENSE.md](native/LICENSE.md), and `native/ruffle-src/LICENSE.md` when redistributing the project.
+<p><strong>English</strong><br>The native player is based on Ruffle. Preserve the notices in <a href="THIRD-PARTY-NOTICES.md">THIRD-PARTY-NOTICES.md</a>, <a href="native/LICENSE.md">native/LICENSE.md</a>, and <code>native/ruffle-src/LICENSE.md</code> when redistributing the project.</p>
+<p><strong>中文</strong><br>原生播放器基于 Ruffle。重新分发时，请保留 <a href="THIRD-PARTY-NOTICES.md">THIRD-PARTY-NOTICES.md</a>、<a href="native/LICENSE.md">native/LICENSE.md</a> 和 <code>native/ruffle-src/LICENSE.md</code> 中的许可证与版权声明。</p>
 
-The upstream Ruffle project is available at [ruffle-rs/ruffle](https://github.com/ruffle-rs/ruffle).
+<p><strong>English</strong><br>The upstream Ruffle project is available at <a href="https://github.com/ruffle-rs/ruffle">ruffle-rs/ruffle</a>.</p>
+<p><strong>中文</strong><br>Ruffle 上游项目地址为 <a href="https://github.com/ruffle-rs/ruffle">ruffle-rs/ruffle</a>。</p>
 
-The project-specific license is provided by the existing project files. No additional license file has been added in this README update.
+<p><strong>English</strong><br>The project-specific license is provided by the existing project files. No additional license file has been added in this README update.</p>
+<p><strong>中文</strong><br>本项目自身的许可证由现有项目文件提供，本次 README 更新没有新增许可证文件。</p>
 
